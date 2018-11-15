@@ -32,14 +32,33 @@ class NavBar extends Component {
 
   render() {
     return (
-      <Menu>
-        <Menu.Item as={Link} to='/' name='Home' />
-        <Menu.Item as={Link} to='/About' name='About' />
-        <Menu.Item as={Link} to='/Pricing' name='Pricing' />
-        <Menu.Item as={Link} to='/Gallery' name='Gallery' />
+      <Menu style={styles.menu} secondary pointing >
+        <Menu.Item style={styles.menuItem} as={Link} to='/' name='Home' />
+        <Menu.Item style={styles.menuItem} as={Link} to='/About' name='About' />
+        <Menu.Item style={styles.menuHeader} header as={Link} to='/' name='Brand' />
+        <Menu.Item style={styles.menuItem} as={Link} to='/Pricing' name='Pricing' />
+        <Menu.Item style={styles.menuItem} as={Link} to='/Gallery' name='Gallery' />
       </Menu>
     );
   }
+}
+
+const styles = {
+  menu: {
+    display: 'flex',
+    justifyContent: 'center',
+  },
+  menuHeader: {
+    marginLeft: '25px',
+    marginRight: '25px',
+    alignSelf: 'center',
+    fontSize: '25px'
+  },
+  menuItem: {
+    marginLeft: '25px',
+    marginRight: '25px',
+    alignSelf: 'center',
+  },
 }
 
 const mapStateToProps = state => {
