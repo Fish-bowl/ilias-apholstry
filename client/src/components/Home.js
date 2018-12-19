@@ -69,43 +69,48 @@ const styles = {
       width: '100px'
     }, 
     // logo: {
+    //   height: '600px',
+    //   width: '100vw'
+    // },
+
+    // logo: {
     //   height: '300px',
     //   width: '300px',
 
     // },
-    header: {
-      border: 'red 3px solid',
-      height: '100px'
-    },
-    leftRail: {
-      zIndex: '1',
-      position: 'fixed',
-      top: '85%'
-    },
-    rightRail: {
-      zIndex: '1',
-      position: 'fixed',
-      top: '75%',
-    },
-    column: {
-      display: 'flex',
-      justifyContent: 'center',
-    },
-    row: {
-      border: 'red 3px solid',
-      display: 'flex',
-      justifyContent: 'center',
-    },
-    twoBoxRow: {
-      border: 'red 3px solid',
-      display: 'flex',
-      justifyContent: 'space-around',
-    },
-    slideshow: {
-      border: 'red 3px solid',
-      height: '450px',
-      width: '66%',
-    }
+    // header: {
+    //   border: 'red 3px solid',
+    //   height: '100px'
+    // },
+    // leftRail: {
+    //   zIndex: '1',
+    //   position: 'fixed',
+    //   top: '85%'
+    // },
+    // rightRail: {
+    //   zIndex: '1',
+    //   position: 'fixed',
+    //   top: '75%',
+    // },
+    // column: {
+    //   display: 'flex',
+    //   justifyContent: 'center',
+    // },
+    // row: {
+    //   border: 'red 3px solid',
+    //   display: 'flex',
+    //   justifyContent: 'center',
+    // },
+    // twoBoxRow: {
+    //   border: 'red 3px solid',
+    //   display: 'flex',
+    //   justifyContent: 'space-around',
+    // },
+    // slideshow: {
+    //   border: 'red 3px solid',
+    //   height: '450px',
+    //   width: '66%',
+    // }
   }
   
 }

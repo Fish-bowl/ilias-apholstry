@@ -15,7 +15,7 @@ import FetchUser from './FetchUser';
 
 const styles = {
   global: {
-    backgroundColor: '#1c313a',
+    backgroundColor: '#a37a00',
   }
 }
 

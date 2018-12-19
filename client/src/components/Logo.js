@@ -4,17 +4,18 @@ import LogoJPG from '../images/IMG_1347.JPG'
 class Logo extends React.Component{
   render(){
     return(
-      <img src={LogoJPG} style={styles.background} />
+      <img src={LogoJPG}  />
     )
   }
 }
 
 const styles = {
   background: {
-    width: '300px',
-    height: '300px',
+    width: '1000px',
+    height: 'auto',
 
   }
 }
+// style = { styles.background }
 
 export default Logo
