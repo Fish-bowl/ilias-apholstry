@@ -13,10 +13,16 @@ import ProtectedRoute from './ProtectedRoute';
 import AuthRoute from './AuthRoute';
 import FetchUser from './FetchUser';
 
+const styles = {
+  global: {
+    backgroundColor: '#1c313a',
+  }
+}
+
 class App extends Component {
   render() {
     return (
-      <div>
+      <div style={styles.global}>
         <NavBar />
         <Flash />
         <FetchUser>

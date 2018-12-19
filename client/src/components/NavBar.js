@@ -47,6 +47,7 @@ const styles = {
   menu: {
     display: 'flex',
     justifyContent: 'center',
+    backgroundColor: '#455a64'
   },
   menuHeader: {
     marginLeft: '25px',

@@ -6,18 +6,13 @@ import {
   Grid,
   Rail,
 } from 'semantic-ui-react';
+import Logo from './Logo'
+import Feed from './CustomerFeed'
 
 class Home extends Component {
   render() {
     return (
       <Container>
-        <Header 
-          style={styles.dev.header} 
-          textAlign='center' 
-          as='h1' 
-        >
-          this is logo
-        </Header>
         {/* <Rail style={styles.dev.leftRail} >
           <Segment><p>these are your costumer reviews</p></Segment>
         </Rail>
@@ -25,7 +20,15 @@ class Home extends Component {
           <Segment><p>this is your bio</p></Segment>
         </Rail> */}
         <Grid>
-          <Grid.Row columns='1'>
+          <Grid.Row columns='3'>
+            <Grid.Column style={styles.dev.logo} >
+              <Logo />
+            </Grid.Column>
+            <Grid.Column style={styles.dev.column} >
+              <Segment style={styles.dev.slideshow} inverted >
+                <p>this is a random image gallery</p>
+              </Segment>
+            </Grid.Column>
             <Grid.Column style={styles.dev.column} >
               <Segment style={styles.dev.slideshow} inverted >
                 <p>this is a random image gallery</p>
@@ -39,15 +42,17 @@ class Home extends Component {
               </Segment>
             </Grid.Column>
             <Grid.Column width='4' >
-              <Segment compact inverted>
-                <p>these are costumer testimonys</p>
+              <Segment style={styles.dev.feed} inverted>
+                <Feed />
               </Segment>
             </Grid.Column>
           </Grid.Row>
           <Grid.Row style={styles.dev.row} >
-            <Segment inverted >
+            <Segment inverted>
               <p>
-                this will be a very personal testimony of why I should buy your product
+                In laboris aute exercitation sit Lorem. Nulla aute ea sit anim labore sint deserunt laboris. Sunt ea nisi est quis nulla minim nisi tempor fugiat nostrud et. Nisi et qui tempor ea irure. Esse laboris Lorem aliquip proident velit minim voluptate ullamco nulla.
+                \n
+                Pariatur commodo enim qui laborum irure esse exercitation pariatur laborum in velit ea consequat.
               </p>
             </Segment>
           </Grid.Row>
@@ -59,6 +64,15 @@ class Home extends Component {
 
 const styles = {
   dev: {
+    feed: {
+      height: '200px',
+      width: '100px'
+    }, 
+    // logo: {
+    //   height: '300px',
+    //   width: '300px',
+
+    // },
     header: {
       border: 'red 3px solid',
       height: '100px'
